@@ -13,7 +13,12 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+ <scm>
+		<url>https://github.com/bharath12b5/irtc.git</url>
+		<connection>scm:git:git://github.com/bharath12b5/irtc.git</connection>
+		<developerConnection>scm:git:git@github.com:bharath12b5/irtc.git</developerConnection>
+	  <tag>HEAD</tag>
+  </scm>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -30,7 +35,18 @@
 
   </dependencies>
   
-  
+  <build>
+  <plugins>
+  <plugin>
+	
+    
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+		
+   </plugin>
+   </plugins>
+   </build>
  <distributionManagement>
     <repository>
         <id>central</id>
